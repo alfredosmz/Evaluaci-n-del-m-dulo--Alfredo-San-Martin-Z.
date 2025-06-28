@@ -29,7 +29,75 @@
             </div>
         </div>
     </nav>
+<h2 class="mb-4">Amenazas Comunes en Ciberseguridad</h2>
 
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+            <img src="Imagenes/phishing-g8b2ac5258_1280.png" class="card-img-top" alt="Phishing">
+            <div class="card-body">
+                <h5 class="card-title clickable-header">Phishing <span class="float-end toggle-icon">+</span></h5>
+                <div class="card-text expandable-content">
+                    <p>El phishing es un tipo de ataque de ingeniería social que engaña a las personas para que revelen información confidencial, como contraseñas y números de tarjetas de crédito, haciéndose pasar por una entidad confiable.</p>
+                    <p><strong>Cómo prevenirlo:</strong> Verifica siempre la dirección del remitente, no hagas clic en enlaces sospechosos y no descargues archivos adjuntos inesperados.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+            <img src="Imagenes/ransomware.jpg" class="card-img-top" alt="Ransomware">
+            <div class="card-body">
+                <h5 class="card-title clickable-header">Ransomware <span class="float-end toggle-icon">+</span></h5>
+                <div class="card-text expandable-content">
+                    <p>El ransomware es un tipo de software malicioso que bloquea el acceso a tus archivos o sistema y exige un rescate para restaurar el acceso.</p>
+                    <p><strong>Cómo prevenirlo:</strong> Realiza copias de seguridad de tus datos regularmente, usa un buen antivirus y mantén tu software actualizado.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3 class="mt-5 mb-3">Ejemplos de Casos Reales</h3>
+<div class="accordion" id="casosRealesAccordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Ataque WannaCry (Ransomware)
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#casosRealesAccordion">
+            <div class="accordion-body">
+                Fue un ciberataque masivo de ransomware en 2017 que afectó a más de 200,000 computadoras en 150 países. Utilizó una vulnerabilidad de Windows para cifrar archivos y pedir un rescate.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Phishing en Gmail (2017)
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#casosRealesAccordion">
+            <div class="accordion-body">
+                Una campaña de phishing altamente sofisticada que imitaba a Google Docs, pidiendo permisos para acceder a las cuentas de Gmail de los usuarios, logrando comprometer miles de cuentas.
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Tu código jQuery para expandir/contraer las tarjetas
+    $(document).ready(function(){
+        $('.expandable-content').hide(); // Oculta el contenido por defecto
+        $('.clickable-header').on('click', function() {
+            $(this).next('.expandable-content').slideToggle(); // Alterna la visibilidad
+            $(this).find('.toggle-icon').text(function(_, text) {
+                return text === '+' ? '-' : '+'; // Cambia el icono
+            });
+        });
+    });
+</script>
 
     <main class="container my-5">
         </main>
