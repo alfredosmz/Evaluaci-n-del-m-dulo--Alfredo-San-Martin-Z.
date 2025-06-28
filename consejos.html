@@ -29,7 +29,82 @@
             </div>
         </div>
     </nav>
+<h2 class="mb-4">Consejos Esenciales de Seguridad Online</h2>
 
+<h3>Buenas Prácticas</h3>
+<ul class="list-group">
+    <li class="list-group-item">Usa contraseñas fuertes y únicas para cada cuenta.</li>
+    <li class="list-group-item">Habilita la autenticación de dos factores (2FA) siempre que sea posible.</li>
+    <li class="list-group-item">Mantén tu software y sistemas operativos actualizados.</li>
+    <li class="list-group-item">Ten cuidado con los enlaces y archivos adjuntos de correos electrónicos sospechosos.</li>
+    <li class="list-group-item">Realiza copias de seguridad de tus datos importantes regularmente.</li>
+    <li class="list-group-item">Usa una conexión segura (HTTPS) al navegar.</li>
+    <li class="list-group-item">Instala y mantén actualizado un software antivirus.</li>
+</ul>
+
+<h3 class="mt-5 mb-3">Formulario de Contacto</h3>
+<form id="contactForm">
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" required>
+        <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="email" required>
+        <div class="invalid-feedback">Por favor, ingresa un correo electrónico válido.</div>
+    </div>
+    <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+        <div class="invalid-feedback">Por favor, ingresa un mensaje.</div>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+</form>
+
+<h3 class="mt-5 mb-3">Test de Seguridad</h3>
+<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#securityTestModal">
+    Realizar Test de Seguridad
+</button>
+
+<div class="modal fade" id="securityTestModal" tabindex="-1" aria-labelledby="securityTestModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="securityTestModalLabel">Tu Test de Ciberseguridad</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="testForm">
+                    <div class="mb-3">
+                        <p>1. ¿Usas contraseñas diferentes para cada cuenta importante?</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1_yes" value="yes" required>
+                            <label class="form-check-label" for="q1_yes">Sí</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q1" id="q1_no" value="no">
+                            <label class="form-check-label" for="q1_no">No</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p>2. ¿Tienes activada la autenticación de dos factores (2FA) donde es posible?</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2_yes" value="yes" required>
+                            <label class="form-check-label" for="q2_yes">Sí</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="q2" id="q2_no" value="no">
+                            <label class="form-check-label" for="q2_no">No</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success">Ver Resultados</button>
+                </form>
+                <div id="testResult" class="mt-3"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <main class="container my-5">
         </main>
