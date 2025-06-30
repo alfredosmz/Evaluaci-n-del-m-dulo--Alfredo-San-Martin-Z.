@@ -1,0 +1,18 @@
+# Archivos de sistema operativos
+.DS_Store
+Thumbs.db
+
+# Entornos de desarrollo
+.vscode/
+.idea/
+
+# Archivos de paquetes
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Archivos temporales o generados
+*.log
+*.tmp
+*.bak
+*.swp
